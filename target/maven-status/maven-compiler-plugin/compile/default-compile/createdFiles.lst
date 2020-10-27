@@ -1,0 +1,8 @@
+automechanicsmall\DisplayApplication.class
+automechanicsmall\DisplayRepository.class
+automechanicsmall\DisplayViewHandler.class
+automechanicsmall\AbstractEvent$1.class
+automechanicsmall\AbstractEvent.class
+automechanicsmall\config\kafka\KafkaProcessor.class
+automechanicsmall\Display.class
+automechanicsmall\PolicyHandler.class
