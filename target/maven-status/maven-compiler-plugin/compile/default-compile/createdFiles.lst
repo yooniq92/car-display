@@ -1,8 +1,14 @@
-automechanicsmall\DisplayApplication.class
-automechanicsmall\DisplayRepository.class
 automechanicsmall\DisplayViewHandler.class
 automechanicsmall\AbstractEvent$1.class
+automechanicsmall\Reserved.class
+automechanicsmall\PaymentApproved.class
+automechanicsmall\BeanUtil.class
+automechanicsmall\PolicyHandler.class
+automechanicsmall\DisplayApplication.class
+automechanicsmall\DisplayRepository.class
+automechanicsmall\PayRequested.class
 automechanicsmall\AbstractEvent.class
+automechanicsmall\ReservedCancelled.class
 automechanicsmall\config\kafka\KafkaProcessor.class
 automechanicsmall\Display.class
-automechanicsmall\PolicyHandler.class
+automechanicsmall\Received.class
