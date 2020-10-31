@@ -7,8 +7,8 @@ automechanicsmall\PolicyHandler.class
 automechanicsmall\DisplayApplication.class
 automechanicsmall\DisplayRepository.class
 automechanicsmall\PayRequested.class
+automechanicsmall\Repaired.class
 automechanicsmall\AbstractEvent.class
 automechanicsmall\ReservedCancelled.class
 automechanicsmall\config\kafka\KafkaProcessor.class
 automechanicsmall\Display.class
-automechanicsmall\Received.class

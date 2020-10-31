@@ -5,8 +5,8 @@ public class PaymentApproved extends AbstractEvent {
 
     private Long id;
     private String rcptDate;
-    private String rcptSeq;
-    private String amt;
+    private Integer rcptSeq;
+    private Integer amt;
 
     public Long getId() {
         return id;
@@ -22,18 +22,20 @@ public class PaymentApproved extends AbstractEvent {
     public void setRcptDate(String rcptDate) {
         this.rcptDate = rcptDate;
     }
-    public String getRcptSeq() {
+
+    public Integer getRcptSeq() {
         return rcptSeq;
     }
 
-    public void setRcptSeq(String rcptSeq) {
+    public void setRcptSeq(Integer rcptSeq) {
         this.rcptSeq = rcptSeq;
     }
-    public String getAmt() {
+
+    public Integer getAmt() {
         return amt;
     }
 
-    public void setAmt(String amt) {
+    public void setAmt(Integer amt) {
         this.amt = amt;
     }
 }

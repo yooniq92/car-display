@@ -48,9 +48,9 @@ public class DisplayViewHandler {
 
     // 예약 완료 후 접수번호 업데이트
     @StreamListener(KafkaProcessor.INPUT)
-    public void whenReservedReceived_then_UPDATE_1 (@Payload Received received) {
+    public void whenReservedRepaired_then_UPDATE_1 (@Payload Repaired repaired) {
         try {
-            if (received.isMe()) {
+            if (repaired.isMe()) {
 
                 EntityManager em = entityManagerFactory.createEntityManager();
                 EntityTransaction etx = em.getTransaction(); // 유효성 검사
@@ -58,10 +58,10 @@ public class DisplayViewHandler {
                 etx.begin();
 
                 String queryString = " UPDATE Display\n"+
-                                     "    SET RCPT_DATE = '"+received.getRcptDate()+"',\n"+
-                                     "        RCPT_SEQ = '"+received.getRcptSeq()+"'\n"+
-                                     "  WHERE RESV_DATE = '"+received.getResvDate()+"'\n"+
-                                     "    AND RESV_TIME = '"+received.getResvTime()+"'  ";
+                                     "    SET RCPT_DATE = '"+repaired.getRcptDate()+"',\n"+
+                                     "        RCPT_SEQ = '"+repaired.getRcptSeq()+"'\n"+
+                                     "  WHERE RESV_DATE = '"+repaired.getResvDate()+"'\n"+
+                                     "    AND RESV_TIME = '"+repaired.getResvTime()+"'  ";
 
                 Query query = em.createQuery(queryString);
                 query.executeUpdate();
